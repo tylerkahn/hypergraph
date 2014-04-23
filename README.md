@@ -1,3 +1,6 @@
+[![Build
+Status](https://travis-ci.org/tylerkahn/hypergraph.svg?branch=travis)](https://travis-ci.org/tylerkahn/hypergraph)
+
 hypergraph
 ==========
 
