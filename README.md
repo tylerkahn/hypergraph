@@ -1,5 +1,5 @@
 [![Build
-Status](https://travis-ci.org/tylerkahn/hypergraph.svg?branch=travis)](https://travis-ci.org/tylerkahn/hypergraph)
+Status](https://travis-ci.org/tylerkahn/hypergraph.svg?branch=master)](https://travis-ci.org/tylerkahn/hypergraph)
 
 hypergraph
 ==========
