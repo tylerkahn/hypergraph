@@ -13,8 +13,8 @@ def test_read():
     directedHyperGraph.readDirectedGraph('tests/data/dirhypergraph.txt')
     
      # modify graph
-    directedHyperGraph.add_hyperedge({'x2','x6'}, {'v7'}, 3.1)
-    directedHyperGraph.add_hyperedge({'x2'}, {'x7','x8'})
+    directedHyperGraph.add_hyperedge(set(['x2','x6']), set(['v7']), 3.1)
+    directedHyperGraph.add_hyperedge(set(['x2']), set(['x7','x8']))
     
     # print Graph for testing
     print("This is directed HyperGraph:")
@@ -25,8 +25,8 @@ def test_read():
     undirectedHyperGraph.readUnDirectedGraph('tests/data/UnDirhypergraph.txt')
     
     # modify graph
-    undirectedHyperGraph.add_hyperedge({'v2','v6','v7'}, 2)
-    undirectedHyperGraph.add_hyperedge({'v7','v8'})
+    undirectedHyperGraph.add_hyperedge(set(['v2','v6','v7']), 2)
+    undirectedHyperGraph.add_hyperedge(set(['v7','v8']))
         
     # print Graph for testing
     print("\nThis is Undirected HyperGraph:")

@@ -1,5 +1,7 @@
 [![Build
 Status](https://travis-ci.org/tylerkahn/hypergraph.svg?branch=master)](https://travis-ci.org/tylerkahn/hypergraph)
+[![Coverage
+Status](https://coveralls.io/repos/tylerkahn/hypergraph/badge.png?branch=master)](https://coveralls.io/r/tylerkahn/hypergraph?branch=master)
 
 hypergraph
 ==========

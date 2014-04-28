@@ -84,7 +84,7 @@ class HyperGraph:
         elif (len(args)==3):
             self.add_hyperedgeByNames(args[0], args[1], args[2])
         else:
-            raise ValueError('Invalid number of arguments {}'.format(len(args)))
+            raise ValueError('Invalid number of arguments {0}'.format(len(args)))
             
     def add_hyperedgeByNames(self, **args):
         '''
@@ -101,7 +101,7 @@ class HyperGraph:
             assert isinstance(h, HyperEdge)
         except AssertionError:
             #raise ValueError('Invalid hyperedge %s' % h)
-            raise ValueError('Invalid hyperedge {}'.format(h))
+            raise ValueError('Invalid hyperedge {0}'.format(h))
        
         self._hyperedges.add(h)
         '''
@@ -143,7 +143,7 @@ class DirectedHyperGraph(HyperGraph):
     def printGraph(self):
         i = 1
         for h in self._hyperedges:
-            print("Edge {}: Tail: {}, Head: {}, weight: {}".format(i, h.tail, h.head, h.weight))
+            print("Edge {0}: Tail: {1}, Head: {2}, weight: {3}".format(i, h.tail, h.head, h.weight))
             i +=1
 
     def add_hyperedgeByNames(self, head=set(), tail=set(), weight=0):
@@ -188,7 +188,7 @@ class DirectedHyperGraph(HyperGraph):
             if line == "": continue   # skip empty lines
             words = line.split(sep)
             if not (2 <= len(words) <= 3):
-                raise Exception('File format error at line {}'.format(i))
+                raise Exception('File format error at line {0}'.format(i))
             i+=1
             tail = words[0].split(delim)
             head = words[1].split(delim)
@@ -212,7 +212,7 @@ class UndirectedHyperGraph(HyperGraph):
     def printGraph(self):
         i = 1
         for h in self._hyperedges:
-            print("Edge {}: Nodes: {}, weight: {}".format(i, h.nodes, h.weight))
+            print("Edge {0}: Nodes: {1}, weight: {2}".format(i, h.nodes, h.weight))
             i +=1
     
     def add_hyperedgeByNames(self, nodes=set(), weight=0):
@@ -249,7 +249,7 @@ class UndirectedHyperGraph(HyperGraph):
             if line == "": continue   # skip empty lines
             words = line.split(sep)
             if not (1 <= len(words) <= 2):
-                raise Exception('File format error at line {}'.format(i))
+                raise Exception('File format error at line {0}'.format(i))
             i+=1
             nodes = words[0].split(delim)
             try:
